@@ -1,87 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuwei Miao - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #007acc;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-            background: #333;
-            color: white;
-        }
-        h1, h2 {
-            color: #007acc;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+    <title>Yuwei Miao - Academic Profile</title>
 </head>
-<body>
 
-<header>
-    <h1>Yuwei Miao</h1>
-    <p>Welcome to my personal website</p>
-</header>
-
-<main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am Yuwei Miao, and I am interested in applying deep learning to 
-            biological and medical challenges. My primary research interests include 
-            Gene Ontology, gene function prediction, and other topics at the intersection 
-            of artificial intelligence and biology.
-        </p>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>Recent Advances in Toxicity Prediction: Applications of Deep Graph Learning. [<a href="doi: 10.1021/acs.chemrestox.2c00384">DOI</a>]</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Feel free to reach out to me at <a href="mailto:yuwei@example.com">yuwei@example.com</a>.
-        </p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2024 Yuwei Miao. All Rights Reserved.</p>
-</footer>
-
+<body class="profile-page">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#">Yuwei Miao</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="page-header header-filter" data-parallax="true" style="background-image:url('https://images.unsplash.com/photo-1505682626014-82a8095ae503?fit=crop&w=1600&q=80');"></div>
+    
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="IMG_7672.PNG" alt="Profile Image" class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <div class="name text-center">
+                                <h3 class="title">Yuwei Miao</h3>
+                                <h6>Researcher in AI and Biology</h6>
+                                <a href="https://github.com/MM-YY-WW" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/yuwei-miao" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center">
+                    <p>
+                        I am a researcher focused on applying deep learning techniques to biological and medical challenges.
+                        My primary interests include Gene Ontology, gene function prediction, and leveraging AI to understand complex biological systems.
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h4 class="title" id="publications">Publications</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>VISH-Pred:</strong> A novel approach for protein toxicity prediction using deep learning. 
+                                <a href="https://doi.org/example-link" target="_blank">[DOI]</a>
+                            </li>
+                            <li>
+                                <strong>GoBERT:</strong> Inferring Gene Ontology annotations with transformer-based models. 
+                                <a href="https://doi.org/example-link" target="_blank">[DOI]</a>
+                            </li>
+                            <li>
+                                <strong>Benchmarking Gene Function Prediction:</strong> Evaluating modern methodologies for accurate predictions. 
+                                <a href="https://doi.org/example-link" target="_blank">[DOI]</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center" id="contact">
+                        <h4 class="title">Contact</h4>
+                        <p>Feel free to reach out at <a href="mailto:yuwei@example.com">yuwei@example.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer text-center">
+        <p>&copy; 2024 Yuwei Miao. Built with <a href="https://demos.creative-tim.com/material-kit" target="_blank">Material Kit</a>.</p>
+    </footer>
+  
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 </body>
 </html>

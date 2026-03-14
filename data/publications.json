@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Breaking the Correlation Plateau: On the Optimization and Capacity Limits of Attention-Based Regressors",
+    "venue": "ICLR",
+    "year": 2026,
+    "project": "projects/eca.html",
+    "paper": "YOUR_ECA_PAPER_LINK",
+    "code": "YOUR_ECA_CODE_LINK"
+  },
+  {
+    "title": "GenePheno: Interpretable Gene Knockout-Induced Phenotype Abnormality Prediction from Gene Sequences",
+    "venue": "AAAI",
+    "year": 2026,
+    "project": "projects/genepheno.html",
+    "paper": "YOUR_GENEPHENO_PAPER_LINK",
+    "code": "YOUR_GENEPHENO_CODE_LINK"
+  },
+  {
+    "title": "GoBERT: Gene Ontology Graph Informed BERT for Universal Gene Function Prediction",
+    "venue": "AAAI",
+    "year": 2025,
+    "project": "projects/gobert.html",
+    "paper": "YOUR_GOBERT_PAPER_LINK",
+    "code": "YOUR_GOBERT_CODE_LINK"
+  }
+]

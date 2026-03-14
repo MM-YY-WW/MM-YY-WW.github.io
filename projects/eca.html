@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECA</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">Yuwei Miao</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Projects</a>
+      <a href="../publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+  <div class="container narrow">
+
+    <p class="eyebrow">Research Project</p>
+
+    <h2>Extrapolative Correlation Attention</h2>
+
+    <p class="lead">
+      Understanding and overcoming the correlation plateau in attention-based regression models.
+    </p>
+
+    <!-- <div class="link-row">
+      <a class="button small" href="YOUR_ECA_PAPER_LINK">Paper</a>
+      <a class="button small" href="YOUR_ECA_CODE_LINK">Code</a>
+    </div> -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <img class="feature-image" src="../assets/images/projects/eca-cover.png" alt="ECA diagram">
+
+    <p class="figure-caption">
+      Illustration of the correlation plateau phenomenon and the proposed extrapolative aggregation mechanism.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Overview</h2>
+
+    <p>
+    Attention-based regression models are frequently trained using a joint objective combining Mean Squared Error (MSE) and Pearson Correlation Coefficient (PCC). In practice, however, correlation often stops improving early during training even when prediction error continues to decrease.
+    </p>
+
+    <p>
+    Our work provides the first theoretical analysis explaining this phenomenon. We show that optimizing magnitude accuracy can suppress the gradient signal required to improve correlation structure, leading to the observed plateau.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Key Insight</h2>
+
+    <p>
+    We demonstrate that standard attention mechanisms behave as convex aggregators, meaning predictions are constrained within the convex hull of input representations. This limitation imposes a strict upper bound on achievable correlation improvement.
+    </p>
+
+    <p>
+    To overcome this limitation, we propose <strong>Extrapolative Correlation Attention (ECA)</strong>, an aggregation mechanism that enables controlled extrapolation beyond the convex hull while preserving stable optimization. Across diverse benchmarks, ECA consistently breaks the correlation plateau and improves predictive correlation without sacrificing MSE performance.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <!-- <div class="container footer-flex">
+    <span>© 2026 Yuwei Miao</span>
+    <span>UT Arlington · SMILES Lab</span>
+  </div> -->
+</footer>
+
+</main>
+
+</body>
+</html>

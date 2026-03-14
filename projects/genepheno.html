@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenePheno | Yuwei Miao</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">Yuwei Miao</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Projects</a>
+      <a href="../publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container narrow">
+
+    <p class="eyebrow">Research Project</p>
+
+    <h2>GenePheno</h2>
+
+    <p class="lead">
+      Predicting knockout-induced phenotype abnormalities directly from gene sequences.
+    </p>
+
+    <!--
+    <div class="link-row">
+      <a class="button small" href="YOUR_GENEPHENO_PAPER_LINK">Paper</a>
+      <a class="button small" href="YOUR_GENEPHENO_CODE_LINK">Code</a>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <img class="feature-image" src="../assets/images/projects/genepheno.png" alt="GenePheno diagram">
+
+    <p class="figure-caption">
+      Overview of GenePheno for predicting gene knockout-induced phenotype abnormalities from gene sequences.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Overview</h2>
+
+    <p>
+    Understanding how genetic sequences determine organismal phenotypes is a central challenge in biology. However, connecting gene sequences to phenotypic outcomes remains difficult due to the large modality gap between sequence information and phenotype observations, as well as the pleiotropic nature of gene–phenotype relationships.
+    </p>
+
+    <p>
+    Existing sequence-based approaches typically focus on predicting the effects of specific variants on a limited number of phenotypes. Meanwhile, broader gene knockout phenotype prediction methods often rely heavily on curated biological knowledge as inputs, limiting their scalability. GenePheno addresses this gap by directly predicting phenotype abnormalities caused by gene knockout using only canonical gene sequences.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Key Idea</h2>
+
+    <p>
+    GenePheno formulates the task as an interpretable multi-label prediction problem, where the goal is to predict the presence of multiple phenotype abnormalities following gene knockout. The model employs a contrastive multi-label learning objective to capture correlations between phenotypes while enforcing biological consistency through an exclusivity regularization.
+    </p>
+
+    <p>
+    To provide mechanistic interpretability, GenePheno incorporates a gene function bottleneck layer that connects sequence-derived representations with functional concepts underlying phenotype formation. To support this research direction, we also curate four datasets linking canonical gene sequences with knockout-induced phenotype abnormalities. Experiments demonstrate strong performance across datasets and show that the model can reveal biologically meaningful gene–phenotype relationships.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-flex">
+    <!-- <span>© 2026 Yuwei Miao</span>
+    <span>UT Arlington · SMILES Lab</span> -->
+  </div>
+</footer>
+
+</main>
+
+</body>
+</html>

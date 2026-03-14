@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CytoWave </title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">Yuwei Miao</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Projects</a>
+      <a href="../publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container narrow">
+
+    <p class="eyebrow">Research Project</p>
+
+    <h2>CytoWave</h2>
+
+    <p class="lead">
+      An orthology-aligned foundation model for single-cell genetic perturbation responses across studies and species.
+    </p>
+
+    <!--
+    <div class="link-row">
+      <a class="button small" href="YOUR_CYTOWAVE_PAPER_LINK">Paper</a>
+      <a class="button small" href="YOUR_CYTOWAVE_CODE_LINK">Code</a>
+      <a class="button small" href="YOUR_CYTOWAVE_SLIDES_LINK">Slides</a>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <img class="feature-image" src="../assets/images/projects/cytowave.png" alt="CytoWave diagram">
+
+    <!-- <p class="figure-caption">
+      Overview of CytoWave for large-scale cross-species single-cell genetic perturbation modeling.
+    </p> -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Overview</h2>
+
+    <p>
+    Single-cell genetic perturbation experiments provide direct measurements of how cells respond to gene perturbations, but these datasets remain fragmented across studies, species, and experimental protocols. As a result, most existing single-cell foundation models are pretrained primarily on unperturbed data and treat perturbation modeling as a downstream task.
+    </p>
+
+    <p>
+    CytoWave addresses this limitation by unifying large-scale cross-species perturbation datasets through orthology alignment and pretraining directly on perturbation data. The model is designed to learn transferable representations of perturbation-induced cellular state changes, enabling more faithful modeling of transcriptomic responses under genetic intervention.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Key Idea</h2>
+
+    <p>
+    CytoWave is trained in two self-supervised stages. In the first stage, the model learns control cell representations through masked gene expression recovery. In the second stage, it learns a deterministic perturbation operator by predicting post-perturbation cellular responses and aligning perturbation effects contrastively in latent space.
+    </p>
+
+    <p>
+    This design allows the model to capture perturbation effects as structured transformations of cellular state, rather than treating perturbation prediction as a purely supervised downstream mapping. Across benchmarks, CytoWave supports accurate perturbation response prediction and reliable inference of pathway-level activity changes after perturbation.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-flex">
+    <!-- <span>© 2026 Yuwei Miao</span>
+    <span>UT Arlington · SMILES Lab</span> -->
+  </div>
+</footer>
+
+</main>
+
+</body>
+</html>

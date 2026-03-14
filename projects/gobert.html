@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoBERT</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">Yuwei Miao</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Projects</a>
+      <a href="../publications.html">Publications</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+  <div class="container narrow">
+
+    <p class="eyebrow">Research Project</p>
+
+    <h2>GoBERT</h2>
+
+    <p class="lead">
+      Learning gene function relationships from Gene Ontology graphs using BERT-based representation learning.
+    </p>
+
+    <!--
+    <div class="link-row">
+      <a class="button small" href="YOUR_GOBERT_PAPER_LINK">Paper</a>
+      <a class="button small" href="YOUR_GOBERT_CODE_LINK">Code</a>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <img class="feature-image" src="../assets/images/projects/gobert.png" alt="GoBERT diagram">
+
+    <p class="figure-caption">
+      Overview of GoBERT for modeling functional relationships in the Gene Ontology graph.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Overview</h2>
+
+    <p>
+    Understanding gene functions is essential for biological discovery, drug development, and disease research. However, identifying new gene functions typically requires extensive wet-lab experimentation, which is costly and time-consuming. Computational approaches aim to accelerate this process by predicting gene functions automatically.
+    </p>
+
+    <p>
+    Most existing methods rely on biological features such as protein sequences, structural information, or protein family annotations. In contrast, GoBERT focuses on the relationships between functions themselves by modeling the structure of the Gene Ontology (GO) graph and existing functional annotations.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container narrow">
+
+    <h2>Key Idea</h2>
+
+    <p>
+    GoBERT formulates gene function prediction as a representation learning problem over the Gene Ontology graph. The model is trained using two complementary self-supervised objectives. A neighborhood prediction task captures explicit functional relationships between GO terms, while a specified masking and recovery task enables the model to learn implicit functional patterns within the ontology.
+    </p>
+
+    <p>
+    After pretraining, GoBERT can infer novel gene functions based on existing functional annotations. Experiments, ablation studies, and biological case analyses demonstrate that GoBERT effectively captures functional dependencies and supports accurate prediction of previously unannotated gene functions.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-flex">
+    <!-- <span>© 2026 Yuwei Miao</span>
+    <span>UT Arlington · SMILES Lab</span> -->
+  </div>
+</footer>
+
+</main>
+
+</body>
+</html>

@@ -1,5 +1,26 @@
 [
   {
+    "title": "CytoWave: Perturbation-Centric Pretraining for Single-Cell Response Prediction",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "project": "projects/cytowave.html"
+  },
+  {
+    "title": "B2P-Corr: Batch-to-Population Gradient Estimators for Non-Decomposable Correlation Losses",
+    "venue": "NeurIPS",
+    "year": 2026
+  },
+  {
+    "title": "Held-Out-Gene Yeast Knockout Fitness Prediction with Gene-Level Biological Features",
+    "venue": "BIBM",
+    "year": 2026
+  },
+  {
+    "title": "GAMI: Gradient-Aligned Modality Importance for Multimodal Cancer Outcome Prediction",
+    "venue": "BIBM",
+    "year": 2026
+  },
+  {
     "title": "Breaking the Correlation Plateau: On the Optimization and Capacity Limits of Attention-Based Regressors",
     "venue": "ICLR",
     "year": 2026,
